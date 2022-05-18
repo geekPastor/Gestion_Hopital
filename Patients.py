@@ -59,7 +59,7 @@ def Enregistre_patient():
 et on retourne le seul patient ayant ce numero """
 
 def chercher_patient_avec_numero_dossier():
-    clear_consol()s
+    clear_consol()
     numero_dossier = int(input("Entrez le numéro du dossier du patient: "))
     for i in range(len(Patients)):
         for j in Patients[i]:
