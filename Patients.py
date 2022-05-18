@@ -1,9 +1,13 @@
+import os
+from Clear_consol import clear_consol
+
 """ Enregistrer un patient : nom, prenom, postnom, téléphone
 , poids, taille, genre, age, numero de dossier (un code unique que vous allez généré)"""
 
 
 Patients = []
 def Enregistre_patient():
+    clear_consol()
     print("################################################################")
     print("##                                                            ##")
     print("##                    ENREGISTRER UN PATIENT                  ##")
@@ -55,6 +59,7 @@ def Enregistre_patient():
 et on retourne le seul patient ayant ce numero """
 
 def chercher_patient_avec_numero_dossier():
+    clear_consol()s
     numero_dossier = int(input("Entrez le numéro du dossier du patient: "))
     for i in range(len(Patients)):
         for j in Patients[i]:
@@ -68,6 +73,7 @@ def chercher_patient_avec_numero_dossier():
 
 """Afficher tous les patients"""
 def Afficher_patient():
+    clear_consol()
     if len(Patients) > 0:
         for i in range(len(Patients)):
             print(f'Prénom : {Patients[i][0]}\nNom: {Patients[i][1]}\n Postnom: {Patients[i][2]}\nNuméro de téléphone du patient :{Patients[i][-1]}\nPoids : {Patients[i][3]}\nTaille : {Patients[i][4]}\nGenre : {Patients[i][5]}\nAge : {Patients[i][6]}\nIMC : {Patients[i][7]}\nPlaintes : {Patients[i][8]}\nNuméro du dossier :{Patients[i][9]}\nDate : {Patients[i][10]}')
@@ -78,6 +84,7 @@ def Afficher_patient():
 """Afficher les plaintes d'un patient à partir de son numero unique"""
 
 def Afficher_les_plaintes_patient():
+    clear_consol()
     numero_dossier = int(input("Entrez le numéro du dossier du patient: "))
     for i in range(len(Patients)):
         for j in Patients[i]:
@@ -86,7 +93,10 @@ def Afficher_les_plaintes_patient():
                 break
             else :
                 print("Aucun patuient n'a ce numéro dans la liste")
+
+                
 def Afficher_imc_patient():
+    clear_consol()
     numero_dossier = int(input("Entrez le numéro du dossier du patient: "))
     for i in range(len(Patients)):
         for j in Patients[i]:
@@ -102,6 +112,7 @@ def Afficher_imc_patient():
 et on nous retourne la liste des utilisateurs ayants ces informations """
 
 def chercher_patient_avec_ses_identifiants():
+    clear_consol()
     chercher_patient = []
     nom = input("Entrez le nom du patient que vous voulez chercher: ")
     postnom = input("Entrez le postnom du patient que vous voulez chercher: ")
