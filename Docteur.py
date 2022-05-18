@@ -294,15 +294,290 @@ def ajouter_horaire():
 
                     else:
                         print("Ces jours n'existent pas !")
+                
                 #pour le cas où on choisit trois jours
                 elif choixuser.lower() == "3":
                     jour1 = input("Entrez le premier jour pour lequel vous voulez ajouter la tâche: ")
                     jour2 = input("Entrez le deuxième jour pour lequel vous voulez ajouter la tâche: ")
                     jour3 = input("Entrez le troisième jour pour lequel vous voulez ajouter la tâche: ")
-
+                    
                     #pour le lundi, mardi et mercerdi
                     if jour1 == "lundi" and jour2 == "mardi" and jour3 == "mercredi":
-                        
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mardi: ")
+                        action3 = input("Entrez la tâche du mercredi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][8].append(action2)
+                        Docteurs[i][9].append(action3)
+
+                    #pour lundi mardi et jeudi
+                    elif jour1 == "lundi" and jour2 == "mardi" and jour3 == "jeudi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mardi: ")
+                        action3 = input("Entrez la tâche du jeudi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][8].append(action2)
+                        Docteurs[i][10].append(action3)
+
+                    #pour lundi mardi et vendredi
+                    elif jour1 == "lundi" and jour2 == "mardi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mardi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][8].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour lundi mardi et samedi
+                    elif jour1 == "lundi" and jour2 == "mardi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mardi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][8].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour lundi mardi et dimanche
+                    elif jour1 == "lundi" and jour2 == "mardi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mardi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][8].append(action2)
+                        Docteurs[i][13].append(action3)
+                    #pour lundi mercedi et jeudi
+                    elif jour1 == "lundi" and jour2 == "mercredi" and jour3 == "jeudi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du jeudi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][10].append(action3)
+
+                    #pour lundi mercredi et vendredi
+                    elif jour1 == "lundi" and jour2 == "mercredi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour lundi mercredi et samedi
+                    elif jour1 == "lundi" and jour2 == "mercredi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour lundi mercredi et dimanche
+                    elif jour1 == "lundi" and jour2 == "mercredi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour lundi jeudi et vendredi
+                    elif jour1 == "lundi" and jour2 == "jeudi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour lundi jeudi samedi
+                    elif jour1 == "lundi" and jour2 == "jeudi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour lundi jeudi diùmanche
+                    elif jour1 == "lundi" and jour2 == "jeudi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][13].append(action3)
+                    
+                    #pour lundi vendredi et samedi
+                        elif jour1 == "lundi" and jour2 == "vendredi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour lundi vendredi dimanche
+                    elif jour1 == "lundi" and jour2 == "vendredi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour le lundi,samedi et dimanche
+                    elif jour1 == "lundi" and jour2 == "samedi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du lundi: ")
+                        action2 = input("Entrez la tâche du samedi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][7].append(action1)
+                        Docteurs[i][12].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour le mardi mercredi jeudi
+                    elif jour1 == "mardi" and jour2 == "mercredi" and jour3 == "jeudi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du jeudi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][10].append(action3)
+
+                    #pour le mardi mercredi vendredi
+                    elif jour1 == "mardi" and jour2 == "mercredi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour le mardi merceredi samedi
+                    elif jour1 == "mardi" and jour2 == "mercredi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour mardi mercredi dimanche
+                    elif jour1 == "mardi" and jour2 == "mercredi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du mercredi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][9].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour lemardi jeudi vendredi
+                    elif jour1 == "mardi" and jour2 == "jeudi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour le mardi jeudi samedi
+                    elif jour1 == "mardi" and jour2 == "jeudi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour mardi jeudi dimanche
+                    elif jour1 == "mardi" and jour2 == "jeudi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour le mardi vendredi samedi
+                    elif jour1 == "mardi" and jour2 == "vendredi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour le mardi vendredi dimanche
+                    elif jour1 == "mardi" and jour2 == "vendredi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour mardi samedi dimanche
+                    elif jour1 == "mardi" and jour2 == "samedi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mardi: ")
+                        action2 = input("Entrez la tâche du samedi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][8].append(action1)
+                        Docteurs[i][12].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour mercredi jeudi et vendredi
+                    elif jour1 == "mercredi" and jour2 == "jeudi" and jour3 == "vendredi":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du vendredi: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][11].append(action3)
+
+                    #pour le mercredi jeudi samedi
+                    elif jour1 == "mercredi" and jour2 == "jeudi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour le mercredi jeudi dimanche
+                    elif jour1 == "mercredi" and jour2 == "jeudi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du jeudi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][10].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour le mercredi vendredi samedi
+                    elif jour1 == "mercredi" and jour2 == "vendredi" and jour3 == "samedi":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du samedi: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][12].append(action3)
+
+                    #pour le mercredi vendrdi dimanche
+                    elif jour1 == "mercredi" and jour2 == "vendredi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du vendredi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][11].append(action2)
+                        Docteurs[i][13].append(action3)
+
+                    #pour le mercredi samedi dimanche
+                    elif jour1 == "mercredi" and jour2 == "samedi" and jour3 == "dimanche":
+                        action1 = input("Entrez la tâche du mercredi: ")
+                        action2 = input("Entrez la tâche du samedi: ")
+                        action3 = input("Entrez la tâche du dimanche: ")
+                        Docteurs[i][9].append(action1)
+                        Docteurs[i][12].append(action2)
+                        Docteurs[i][13].append(action3)
                 elif choixuser.lower() == "Tous":
                     travail = input("Travaillez-vous aussi le dimanche(oui ou non): ")
                     if travail.lower() == "non"
